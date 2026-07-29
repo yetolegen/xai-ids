@@ -1,10 +1,5 @@
 # Multiclass Results — NSL-KDD (KDDTest+)
 
-Verified 2026-07-29 by re-running `notebooks/multiclass.ipynb` fresh (its previously
-saved cell output had gone stale — a leftover from an earlier run — and briefly
-showed R2L recall 0.085 instead of 0.118; this file is the re-confirmed source of
-truth, cross-checked against `figures/mc_01_confusion_matrix.png`).
-
 Model: XGBoost, `objective="multi:softmax"`, `n_estimators=100`, `max_depth=6`,
 `learning_rate=0.1`, `random_state=42`, `sample_weight` = `total/(n_classes*count)`.
 
